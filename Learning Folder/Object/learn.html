@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects.</title>
+</head>
+<body>
+    
+    <script>
+        // const person={
+        //     name:"H.",
+        //     age:20
+        // };
+        // console.log(person.name);
+        // console.log(person.age);
+
+        // person.name="H.lr";
+        // console.log(person.name);
+        // person.job="Developer";
+        // console.log(person);
+        // delete person.job;
+        // console.log(person);
+        // console.log(typeof person);
+
+        const product={
+            name:"Shirt",
+            rating:{
+                stars:4.5,
+                rating:80
+            },
+            fun:function greet(){
+                console.log("Function inside object.")
+            }
+        };
+        console.log(product['name']);
+        console.log(product.rating.rating);
+        product.fun();
+        const jsonStringfy=JSON.stringify(product)
+        console.log(jsonStringfy)
+        const jsonParse=JSON.parse(jsonStringfy)
+        console.log(jsonParse)
+    </script>
+</body>
+</html>
