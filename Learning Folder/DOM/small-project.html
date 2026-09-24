@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Small Project.</title>
+</head>
+<body>
+    
+    <!-- Youtube Subscribe -->
+
+    <!-- <p>Youtube Subscribe Button</p>
+    <button onclick="subscribe()" class="sub">Subscribe</button> -->
+
+    <!-- Amazon Shipping Calculator -->
+
+    <p>Amazon Shipping Calculator</p>
+    <p>Orders under ₹1000 = +₹30 shipping.</p>
+    <p>Orders Over ₹1000 = Free shipping.</p>
+    <input type="text" placeholder="Cost of order" class="cost-input" onkeydown="handleCost(event)">
+    <button onclick="calculateOrder()">calculate</button>
+    <p class="finalPrice"></p>
+
+    <script>
+
+        /*function subscribe(){
+        const buttonElem=document.querySelector('.sub');
+        if (buttonElem.innerText === "Subscribe"){
+            buttonElem.innerHTML="Subscribed"
+        } else{
+            buttonElem.innerHTML="Subscribe"
+        }
+    }*/
+   function calculateOrder(){
+    const inputElem=document.querySelector('.cost-input');
+    let cost=JSON.parse(inputElem.value);
+    if (cost < 1000){
+        cost+=30;
+    }
+    document.querySelector('.finalPrice').innerHTML=`₹ ${cost}`;
+   }
+
+   function handleCost(event){
+    if (event.key==='Enter'){
+        calculateOrder()
+    }
+   }
+    </script>
+
+</body>
+</html>
