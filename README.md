@@ -6,15 +6,15 @@
 
 ## Topics to Cover
 
-- JavaScript Basics
-- Variables and Data Types
-- Operators
-- Conditions
+- JavaScript Basics ✔️
+- Variables and Data Types ✔️
+- Operators ✔️
+- Conditions ✔️
+- Functions ✔️ 
+- Objects ✔️
+- DOM Manipulation ✔️
 - Loops
-- Functions
 - Arrays
-- Objects
-- DOM Manipulation
 - Events
 - ES6+ Features
 - Async JavaScript
