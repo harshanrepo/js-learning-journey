@@ -4,13 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM - Small Project.</title>
+    <style>
+        .sub{
+            background-color: black;
+            color: aliceblue;
+            padding:10px 10px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            margin-bottom:30px;
+        }
+
+        .is-sub{
+            background-color: rgb(240,240,240);
+            color: black;
+            padding:10px 10px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cost-input{
+            padding: 10px;
+        }
+
+        .calculateBtn{
+            padding: 10px;
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        
+    </style>
 </head>
 <body>
     
     <!-- Youtube Subscribe -->
 
-    <!-- <p>Youtube Subscribe Button</p>
-    <button onclick="subscribe()" class="sub">Subscribe</button> -->
+    <p>YouTube Subscribe Button</p>
+    <button onclick="subscribe()" class="sub">Subscribe</button>
 
     <!-- Amazon Shipping Calculator -->
 
@@ -18,19 +51,22 @@
     <p>Orders under ₹1000 = +₹30 shipping.</p>
     <p>Orders Over ₹1000 = Free shipping.</p>
     <input type="text" placeholder="Cost of order" class="cost-input" onkeydown="handleCost(event)">
-    <button onclick="calculateOrder()">calculate</button>
+    <button onclick="calculateOrder()" class="calculateBtn">calculate</button>
     <p class="finalPrice"></p>
 
     <script>
 
-        /*function subscribe(){
+        function subscribe(){
         const buttonElem=document.querySelector('.sub');
         if (buttonElem.innerText === "Subscribe"){
-            buttonElem.innerHTML="Subscribed"
+            buttonElem.innerHTML="Subscribed";
+            buttonElem.classList.add('is-sub');
         } else{
-            buttonElem.innerHTML="Subscribe"
+            buttonElem.innerHTML="Subscribe";
+            buttonElem.classList.remove('is-sub');
         }
-    }*/
+    }
+
    function calculateOrder(){
     const inputElem=document.querySelector('.cost-input');
     let cost=JSON.parse(inputElem.value);
