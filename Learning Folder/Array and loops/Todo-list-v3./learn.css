@@ -1,0 +1,43 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.head{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.todo-grid,.todo-input-grid{
+    display: grid;
+    grid-template-columns: 270px 150px 100px;
+    gap:10px;
+    align-items: center;
+}
+
+.todo-input-grid{
+    margin-bottom: 10px;
+    align-items: stretch;
+}
+
+.getName,.getDate,.btn,.btn-del{
+    font-size: 15px;
+    padding: 6px;
+}
+
+.btn{
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-del{
+    background-color: darkred;
+    color: white;
+    border: none;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}

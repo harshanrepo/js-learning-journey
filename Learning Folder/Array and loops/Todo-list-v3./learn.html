@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-list-v3.</title>
+    <link rel="stylesheet" href="learn.css">
+</head>
+
+<body>
+    <p class="head">Todo Lists</p>
+    <div class="todo-input-grid">
+    <input type="text" placeholder="Todo name" class="getName" onkeydown="addElem(event) " required>
+    <input type="date" class="getDate">
+    <button onclick="addList()" class="btn">Add</button>
+    </div>
+    <div class="todo-lists todo-grid"></div>
+    <script src="learn.js"></script>
+
+</body>
+
+</html>
