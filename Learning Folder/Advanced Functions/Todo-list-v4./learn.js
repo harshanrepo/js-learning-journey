@@ -4,6 +4,10 @@ const dateElem = document.querySelector('.getDate');
 const Lists = document.querySelector('.todo-lists');
 
 nameElem.addEventListener('keydown', addElem);
+document.querySelector(".addBtn").addEventListener("click",() =>{
+    addList()
+})
+
 
 function addList() {
     let nameValue = nameElem.value;
@@ -15,7 +19,7 @@ function addList() {
 
 function showLists() {
     let todoListHtml = "";
-    todoList.forEach(function (todoObject, i) {
+    todoList.forEach( (todoObject, i)  => {
         const { name, date } = todoObject;
         const html = `
         <div>${name}</div>

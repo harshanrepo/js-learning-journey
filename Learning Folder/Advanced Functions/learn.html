@@ -6,8 +6,13 @@
     <title>Advanced Functions</title>
 </head>
 <body>
-    <script>
-        // const function1=function greeting(){
+    <!-- <button class="changeStatus" onclick="changeState()">Start</button> -->
+    <!-- <button onclick="addedToCart()">Add to cart</button>
+    <p class="addedMsg"></p> -->
+    <button class="click">Click</button>
+
+<script>
+    // const function1=function greeting(){
         //     console.log("Hello..")
         // };
         // console.log(function1);
@@ -29,13 +34,40 @@
         //     console.log("Oh geezzz");
         // },3000);
 
-        ["One..","Two...","Three.."].forEach(function(value){
-            console.log(value)
-        });
+        // ["One..","Two...","Three.."].forEach(function(value){
+        //     console.log(value)
+        // });
 
+        // const add=function add(){
+        //     console.log(2+3);
+        // }
+        // add();
+        // add();
 
+    //     function changeState(){
+    //         const changeStatus=document.querySelector(".changeStatus")
+    //         changeStatus.innerHTML="Loading..."    
+    //         setTimeout(function(){
+    //         changeStatus.innerHTML="Finished!";
+    //     },1000);
+    // }
+        
+        // function addedToCart(){
+        //     const cartMsg=document.querySelector(".addedMsg");
+        //     cartMsg.innerHTML="Added";
+        //     setTimeout(function(){
+        //         cartMsg.innerHTML="";
+        //     },3000);
+        // }
 
-
+        // const arrowFunction=(name)=>{
+        //     console.log("Arrow => "+name)
+        // }
+        // arrowFunction("Here!!!  ")
+    const clickElement=document.querySelector(".click");
+    clickElement.addEventListener("click",() =>{
+        clickElement.innerHTML="Finished!!"
+    })
 
 </script>
 </body>
