@@ -6,16 +6,6 @@
 
 ## Topics to Cover
 
-- JavaScript Basics  -  ✔️
-- Variables and Data Types  -  ✔️
-- Operators  -  ✔️
-- Conditions  -  ✔️
-- Functions  -  ✔️
-- Objects  -  ✔️
-- DOM Manipulation  -  ✔️
-- Loops  -  ✔️
-- Arrays  -  ✔️
-- Events
 - ES6+ Features
 - Async JavaScript
 - APIs
@@ -26,4 +16,4 @@ I will continuously update this repository with examples, exercises, and practic
 
 ## Goal
 
-Build a strong foundation in JavaScript for web development.
+Build a strong foundation in JavaScript.
